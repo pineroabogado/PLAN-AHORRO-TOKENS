@@ -1,0 +1,31 @@
+{
+  "fecha": "2026-09-23T09:04:49.056Z",
+  "agregado": {
+    "sesiones": 1,
+    "MB_contexto_total": 6.73,
+    "pasos_total": 300,
+    "tool_calls_total": 340,
+    "tool_results_mas_de_8KB": 46,
+    "cabecera_media_KB": 55,
+    "cabecera_media_tokens": 14154
+  },
+  "sesiones": [
+    {
+      "sesion": "session-c1288069-0c24-42c1-a1d5-64d3bdb1946d",
+      "MB_contexto": 6.73,
+      "pasos": 300,
+      "tool_calls": 340,
+      "cabecera": {
+        "generaciones": 10,
+        "max_KB": 86,
+        "media_KB": 55,
+        "tokens_max": 22027,
+        "tokens_media": 14154,
+        "familias_tools": [
+          "mcp__gci__",
+          "mcp__gci__+mcp__avodesk__"
+        ]
+      }
+    }
+  ]
+}

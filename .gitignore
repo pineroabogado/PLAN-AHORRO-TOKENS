@@ -1,0 +1,5 @@
+# Copias de seguridad que generan los scripts (.bak del patch del perfil y de los presets)
+*.bak
+
+# Mediciones temporales o parciales
+mediciones/*.tmp.json
