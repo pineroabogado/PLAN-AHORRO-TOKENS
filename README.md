@@ -3,6 +3,7 @@
 **Ruta única para todos los agentes.** Esta carpeta es el punto de entrada del plan de reducción de consumo de tokens del asistente (DeepSeek Harness) en este PC. Está pensada para **cualquier agente, con cualquier nombre y para cualquier proyecto**: no depende de un dominio, de un servidor MCP concreto ni de un repositorio concreto.
 
 **Ruta:** `C:\Users\Despacho3\Desktop\DESARROLLOS\PLAN AHORRO TOKENS`
+**Repositorio:** https://github.com/pineroabogado/PLAN-AHORRO-TOKENS (rama `main`)
 **Última actualización:** 23 de septiembre de 2026
 
 ---
@@ -81,4 +82,6 @@ Presupuesto obligatorio al crear agentes o skills nuevos: **núcleo de skill ≤
 | Configuración general del asistente | `~/.dsh/profiles/web/cordis.patch.yml` | Idem |
 | Mediciones y baseline | `mediciones/` de esta carpeta | Histórico comparable |
 
-> Esta carpeta está **fuera de cualquier repositorio de proyecto** (es transversal) y **no está bajo control de versiones**. Si se quiere historial de cambios, crear aquí un repositorio git propio.
+> Esta carpeta es **transversal** (fuera de los repositorios de proyecto) y tiene **repositorio propio**: https://github.com/pineroabogado/PLAN-AHORRO-TOKENS (rama `main`). Los ficheros `.bak` que generan los scripts están ignorados por `.gitignore`.
+>
+> **Publicar cambios:** `git -C "C:\Users\Despacho3\Desktop\DESARROLLOS\PLAN AHORRO TOKENS" add -A && git commit -m "<mensaje>" && git push`
