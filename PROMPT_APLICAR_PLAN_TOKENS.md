@@ -64,8 +64,19 @@ AHORRO DE TOKENS al proyecto <PROYECTO> (ruta: <RUTA_PROYECTO>).
    5. MEDIR EL DESPUÉS Y COMPARAR
       node scripts\medir-consumo-sesiones.mjs --nuevas --top 5 --comparar "<ruta del baseline>"
       Guarda el JSON nuevo en mediciones\.
-   6. DOCUMENTAR (solo con autorización si es otro proyecto): en la documentación del proyecto, una nota
-      con: qué preset usa, cómo se elige, su baseline, su presupuesto de skills y su cadencia de medición.
+   6. DOCUMENTAR Y DEJAR PUNTERO (solo con autorización si es otro proyecto). Esta carpeta es la
+      UBICACIÓN ÚNICA: el proyecto NO guarda copia del plan, solo apunta aquí. Deja el puntero en los
+      DOS sitios que lee un agente de ese proyecto:
+        a) el fichero de instrucciones del proyecto (`AGENTS.md` o equivalente) y
+        b) la regla alwaysApply del proyecto (`.cursor/rules/*.mdc`), si el proyecto usa reglas,
+      con este contenido mínimo (adaptar nombres, no inventar rutas):
+        "Plan de ahorro de tokens — UBICACIÓN ÚNICA: C:\Users\Despacho3\Desktop\DESARROLLOS\PLAN AHORRO TOKENS
+         (repo https://github.com/pineroabogado/PLAN-AHORRO-TOKENS). Es la única referencia del plan y no
+         hay copia en este repositorio. Leerlo antes de crear o cambiar tools MCP, skills o la
+         configuración del asistente. Presupuestos: skill ≤ 8 KB, tool MCP ≤ 200 tokens. La configuración
+         del asistente NUNCA se edita en caliente. Cada servidor MCP se declara en el preset del proyecto."
+      Además, en la documentación del proyecto: qué preset usa, cómo se elige, su baseline, su presupuesto
+      de skills y su cadencia de medición.
 
 4) EVIDENCIA EXIGIDA (no vale "debería funcionar")
    - salida de --dump-config con `agent-presets` y sin filas MCP en el perfil;

@@ -43,7 +43,7 @@ Lanzador de escritorio: `..\MCP\Recargar-MCP-GCI.bat` (llama al script de recarg
 4. **Verificar en frío**: parar el asistente → `dsh --profile web --dump-config` (no debe haber filas de MCP en la configuración general) → arrancar → abrir **sesión nueva** con ese preset y comprobar que aparecen las tools `mcp__<serverName>__…` y **ninguna** de otros proyectos.
 5. **Medir el después** y comparar:
    `node scripts/medir-consumo-sesiones.mjs --nuevas --top 5 --comparar mediciones/<baseline>.json`
-6. **Documentar** en el proyecto (con autorización, si es de otro ámbito) y **repetir la medición cada viernes**.
+6. **Dejar puntero en el proyecto** (con autorización, si es de otro ámbito): esta carpeta es la **ubicación única**; el proyecto **no guarda copia**, solo apunta aquí. El puntero va en los dos sitios que lee un agente del proyecto: su fichero de instrucciones (`AGENTS.md` o equivalente) y su regla alwaysApply (`.cursor/rules/*.mdc`). Referencia ya implantada, útil como plantilla: `GCI-ONLINE\AGENTS.md` § *Plan de ahorro de tokens — UBICACIÓN ÚNICA* y `GCI-ONLINE\.cursor\rules\plan-ahorro-tokens.mdc`. Después, **repetir la medición cada viernes**.
 
 Presupuesto obligatorio al crear agentes o skills nuevos: **núcleo de skill ≤ 8 KB**, **definición de tool MCP ≤ 200 tokens**, sin dejar conectada ninguna herramienta que el proyecto no use, y nada de pegar documentos enteros dentro de un skill.
 
@@ -67,6 +67,7 @@ Presupuesto obligatorio al crear agentes o skills nuevos: **núcleo de skill ≤
 |---|---|
 | Medición recurrente (baseline + comparación) | ✅ implantada y verificada |
 | Separación de los MCP por proyecto (un preset por proyecto) | ✅ implantada y verificada en la estructura · ⏳ falta la comprobación de extremo a extremo en una sesión nueva del primer proyecto |
+| Puntero de **ubicación única** en los agentes de cada proyecto (sin copia del plan) | ✅ GCI-ONLINE (instrucciones + regla alwaysApply) · ⏳ resto de proyectos, con autorización |
 | Presupuestos de skill/tool y mantenimiento (§11) | ✅ documentados · ⏳ pendientes de aplicar |
 | Disciplina de salida, configuración general a índice, adelgazar definiciones de tools, trocear skills grandes | ⏳ pendientes |
 
