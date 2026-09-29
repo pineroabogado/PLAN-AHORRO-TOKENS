@@ -1,0 +1,96 @@
+{
+  "fecha": "2026-09-29T11:43:12.453Z",
+  "agregado": {
+    "sesiones": 5,
+    "MB_contexto_total": 49.59,
+    "pasos_total": 2631,
+    "tool_calls_total": 2773,
+    "tool_results_mas_de_8KB": 298,
+    "cabecera_media_KB": 42,
+    "cabecera_media_tokens": 10786
+  },
+  "sesiones": [
+    {
+      "sesion": "session-c1288069-0c24-42c1-a1d5-64d3bdb1946d",
+      "MB_contexto": 26.35,
+      "pasos": 1531,
+      "tool_calls": 1563,
+      "cabecera": {
+        "generaciones": 22,
+        "max_KB": 100,
+        "media_KB": 42,
+        "tokens_max": 25714,
+        "tokens_media": 10844,
+        "familias_tools": [
+          "mcp__gci__",
+          "mcp__avodesk__+mcp__gci__"
+        ]
+      }
+    },
+    {
+      "sesion": "session-6a34e61b-9f2c-4fec-b77d-0aa400d4da11",
+      "MB_contexto": 12.25,
+      "pasos": 594,
+      "tool_calls": 646,
+      "cabecera": {
+        "generaciones": 31,
+        "max_KB": 100,
+        "media_KB": 35,
+        "tokens_max": 25713,
+        "tokens_media": 8957,
+        "familias_tools": [
+          "mcp__gci__",
+          "mcp__avodesk__+mcp__gci__",
+          "mcp__avodesk__"
+        ]
+      }
+    },
+    {
+      "sesion": "session-8b380577-bf87-48f8-b61b-f1fd38645b02",
+      "MB_contexto": 2.29,
+      "pasos": 98,
+      "tool_calls": 130,
+      "cabecera": {
+        "generaciones": 2,
+        "max_KB": 33,
+        "media_KB": 33,
+        "tokens_max": 8416,
+        "tokens_media": 8413,
+        "familias_tools": []
+      }
+    },
+    {
+      "sesion": "session-00c339cf-98f2-4b20-90ae-898ae6654fb8",
+      "MB_contexto": 3.82,
+      "pasos": 157,
+      "tool_calls": 193,
+      "cabecera": {
+        "generaciones": 2,
+        "max_KB": 62,
+        "media_KB": 62,
+        "tokens_max": 15865,
+        "tokens_media": 15865,
+        "familias_tools": [
+          "mcp__gci__"
+        ]
+      }
+    },
+    {
+      "sesion": "session-db42dacd-2a65-4aaa-b701-851a79689eb4",
+      "MB_contexto": 4.88,
+      "pasos": 251,
+      "tool_calls": 241,
+      "cabecera": {
+        "generaciones": 10,
+        "max_KB": 80,
+        "media_KB": 38,
+        "tokens_max": 20354,
+        "tokens_media": 9851,
+        "familias_tools": [
+          "mcp__gci__",
+          "mcp__avodesk__+mcp__gci__"
+        ]
+      }
+    }
+  ]
+}
