@@ -67,7 +67,7 @@ Presupuesto obligatorio al crear agentes o skills nuevos: **núcleo de skill ≤
 |---|---|
 | Medición recurrente (baseline + comparación) | ✅ implantada y verificada |
 | Separación de los MCP por proyecto (un preset por proyecto) | ✅ implantada y verificada en la estructura · ⏳ falta la comprobación de extremo a extremo en una sesión nueva del primer proyecto |
-| Puntero de **ubicación única** en los agentes de cada proyecto (sin copia del plan) | ✅ GCI-ONLINE (instrucciones + regla alwaysApply) · ⏳ resto de proyectos, con autorización |
+| Puntero de **ubicación única** en los agentes de cada proyecto (sin copia del plan) | ✅ GCI-ONLINE · ✅ pineroabogado-web (29/09/2026; sin MCP propio) · ⏳ resto |
 | Presupuestos de skill/tool y mantenimiento (§11) | ✅ documentados · ⏳ pendientes de aplicar |
 | Disciplina de salida, configuración general a índice, adelgazar definiciones de tools, trocear skills grandes | ⏳ pendientes |
 
