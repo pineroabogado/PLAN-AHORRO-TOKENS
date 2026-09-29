@@ -4,7 +4,7 @@
 
 **Ruta:** `C:\Users\Despacho3\Desktop\DESARROLLOS\PLAN AHORRO TOKENS`
 **Repositorio:** https://github.com/pineroabogado/PLAN-AHORRO-TOKENS (rama `main`)
-**Última actualización:** 23 de septiembre de 2026
+**Última actualización:** 29 de septiembre de 2026
 
 ---
 
@@ -66,10 +66,14 @@ Presupuesto obligatorio al crear agentes o skills nuevos: **núcleo de skill ≤
 | Fase | Estado |
 |---|---|
 | Medición recurrente (baseline + comparación) | ✅ implantada y verificada |
-| Separación de los MCP por proyecto (un preset por proyecto) | ✅ implantada y verificada en la estructura · ⏳ falta la comprobación de extremo a extremo en una sesión nueva del primer proyecto |
+| Separación de los MCP por proyecto (un preset por proyecto) | ✅ presets `gci` + `crm` · ✅ `dump-config` sin `dsh-mcp-client` en perfil (29/09/2026) · ✅ sesión solo-`mcp__gci__` medida · ⏳ aún hay sesiones históricas mixtas `gci+avodesk` (usar sesión **nueva** con preset del proyecto) |
 | Puntero de **ubicación única** en los agentes de cada proyecto (sin copia del plan) | ✅ GCI-ONLINE · ✅ pineroabogado-web (29/09/2026; sin MCP propio) · ⏳ resto |
-| Presupuestos de skill/tool y mantenimiento (§11) | ✅ documentados · ⏳ pendientes de aplicar |
-| Disciplina de salida, configuración general a índice, adelgazar definiciones de tools, trocear skills grandes | ⏳ pendientes |
+| Presupuestos de skill/tool y mantenimiento (§11) | ✅ documentados · parcial GCI (29/09/2026) |
+| Disciplina de salida | ✅ regla alwaysApply |
+| `AGENTS.md` → índice (Fase 2.2) | ✅ GCI-ONLINE ~3,4 KB (29/09/2026) |
+| Archivar `reference.md` legacy (Fase 4.3) | ✅ GCI-ONLINE (~205 KB → ~7 KB stubs; 29/09/2026) |
+| Adelgazar tools MCP · trocear skills grandes (comunicaciones 132 KB, etc.) | ⏳ pendientes |
+| Medición | ✅ `mediciones/consumo-gci-20260929.json` (cabecera media ~12,7 k t) |
 
 **Caso medido (ejemplo real, 23/09/2026):** al descargar dos servidores MCP de la configuración general, la cabecera por petición pasó de **97–100 KB (~25.000 tokens)** a **28 KB (~7.200)**: cada sesión de un proyecto dejó de cargar el manual del otro (**~10–17 k tokens menos por petición**).
 
